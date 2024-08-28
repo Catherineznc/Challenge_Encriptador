@@ -1,0 +1,138 @@
+body {
+    background-color: #E9ECF8;
+    font-family: sans-serif
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#input-texto, #output-texto {  
+    height: 350px; 
+    margin-bottom: 20px;   
+    border: none;
+    font-family: sans-serif;
+}
+
+#output-texto{
+    width: 80%;
+    height: 400px;
+}
+
+#input-texto {
+    margin-top: 30px;
+    width: 90%; 
+    background-color: #E9ECF8;
+}
+
+.btn {
+    margin: 0 10px; 
+    border-radius: 15px; 
+    width: 170px; 
+    height: 50px;
+}
+
+button {
+    margin: 0 10px; 
+}
+
+.mensaje-no-encontrado {
+    text-align: center;
+    margin-top: 20px;
+    color: #999; 
+}
+
+.ilustracion {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 30px; 
+}
+
+#btn-encriptar {
+    background-color: #0A3871; 
+    color: white; 
+ }
+  
+ #btn-desencriptar {
+    background-color: #D8DFE8; 
+    color: #0A3871; 
+ }
+
+#btn-copiar{
+    background-color: white;
+    color: #0A3871;
+}
+
+
+.input-group, .output-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 80%; 
+}
+
+
+.input-group .logo-container {
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) { 
+    main {
+        flex-direction: row; 
+    }
+
+    #input-texto {
+        width: 60%; 
+    }
+
+    #output-texto {
+        width: 30%; 
+    }
+
+    .input-group, .output-group {
+        width: 45%; 
+    }
+
+    #btn-copiar {
+        margin-top: 20px; 
+    }
+}
+
+@media (max-width: 767px) { 
+    main {
+        flex-direction: column; 
+    }
+
+    #input-texto, #output-texto {
+        width: 80%; 
+    }
+
+    .input-group, .output-group {
+        width: 80%; 
+    }
+
+    #output-texto {
+        margin-top: 30px !important;
+ }
+}
+
+.mensaje-instrucciones {
+    display: flex;
+    align-items: center; 
+    margin-top: 10px; 
+}
+
+.mensaje-instrucciones p {
+    font-size: 12px; 
+    margin-left: 5px; 
+}
+
+.mensaje-instrucciones svg {
+    width: 20px; 
+    height: auto;
+}
